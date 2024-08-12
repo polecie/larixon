@@ -52,15 +52,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="category",
             name="name",
-            field=models.CharField(
-                max_length=100, unique=True, verbose_name="Название категории"
-            ),
+            field=models.CharField(max_length=100, unique=True, verbose_name="Название категории"),
         ),
         migrations.AlterField(
             model_name="city",
             name="name",
-            field=models.CharField(
-                max_length=100, unique=True, verbose_name="Название города"
-            ),
+            field=models.CharField(max_length=100, unique=True, verbose_name="Название города"),
         ),
     ]

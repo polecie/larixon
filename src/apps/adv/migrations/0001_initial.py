@@ -69,15 +69,11 @@ class Migration(migrations.Migration):
                 ("views", models.PositiveIntegerField(default=0)),
                 (
                     "category",
-                    models.ForeignKey(
-                        on_delete=django.db.models.deletion.PROTECT, to="adv.category"
-                    ),
+                    models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to="adv.category"),
                 ),
                 (
                     "city",
-                    models.ForeignKey(
-                        on_delete=django.db.models.deletion.PROTECT, to="adv.city"
-                    ),
+                    models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to="adv.city"),
                 ),
             ],
             options={

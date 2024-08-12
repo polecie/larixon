@@ -5,4 +5,5 @@
 
 ## Запуск
 Склонируйте репозиторий и в папке с проектом выполните команду `docker-compose -f .docker/docker-compose.yaml up -d --build`, после этого проект доступен на http://0.0.0.0:8000
+
 Для создания суперпользователя можно использовать команду `docker compose -f .docker/docker-compose.yaml exec -it api python manage.py createsuperuser` или использовать готового суперпользователя с кредами `admin:admin`
